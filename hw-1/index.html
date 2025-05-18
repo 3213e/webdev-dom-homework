@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-tree</title>
+</head>
+<body>
+<h1>Студенты</h1>
+<ul>
+    <li>Такмеичи</li>
+    <li>Хасаги</li>
+    <li>Гашетка</li>
+</ul>
+
+    <div>
+        <h3>форма добавления</h3>
+        <input type="text"  id="field"/>
+        <br /><br />
+        <button type="button" id="add">добавить</button>
+        <br /><br />
+        <button type="button">удалить последний элемент</button>
+    </div>
+</body>
+<script>
+    const button = document.getElementById("add");
+
+    button.addEventListener("click", () => {
+        console.log("click");
+    });
+
+    const input = document.getElementById("field");
+
+    input.addEventListener("input", () => {
+        console.log("input");
+    });
+</script>
+</html>
