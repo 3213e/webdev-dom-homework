@@ -108,7 +108,7 @@
       `;
 
       // Добавляем новый комментарий в начало списка
-      commentsList.insertAdjacentHTML('afterbegin', newComment);
+      commentsList.insertAdjacentHTML('beforeend', newComment);
 
       // Очищаем поля ввода
       nameInput.value = '';
